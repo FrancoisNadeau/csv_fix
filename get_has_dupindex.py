@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 
 import sys
-from typing import Union
-
 import pandas as pd
+
 from argparse import ArgumentParser
+from typing import Union
 from unidecode import unidecode
 
-from shortcuts import even_seq, get_desc, InptType, odd_seq
-from get_bytes import get_bytes
-from get_encoding import get_encoding
-from get_has_header import get_has_header
+from .get_bytes import get_bytes
+from .get_encoding import get_encoding
+from .get_has_header import get_has_header
+from .shortcuts import even_seq, get_desc, InptType, odd_seq
 
 
 def get_has_dupindex(inpt: Union[InptType, pd.DataFrame],

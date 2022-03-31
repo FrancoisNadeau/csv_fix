@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 
+from argparse import ArgumentParser
 from collections import Counter
 from typing import Union
 
-from argparse import ArgumentParser
-
-from shortcuts import get_desc, InptType
-from get_bytes import get_bytes
-from get_encoding import get_encoding
+from .get_bytes import get_bytes
+from .get_encoding import get_encoding
+from .shortcuts import get_desc, InptType
 
 
 def get_line_end(inpt: InptType,

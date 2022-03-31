@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 
 import pandas as pd
+
 from argparse import ArgumentParser
 from docstring_parser import parse as ds_parse
 from io import StringIO
 from typing import Union
 from unidecode import unidecode
 
-from shortcuts import InptType, SepType
-from get_bytes import get_bytes
-from get_encoding import get_encoding
-from get_has_header import get_has_header
-from get_separator import get_separator
+from .get_bytes import get_bytes
+from .get_encoding import get_encoding
+from .get_has_header import get_has_header
+from .get_separator import get_separator
+from .shortcuts import InptType, SepType
 
 
 def header_type(has_hdr: bool
@@ -25,7 +26,7 @@ def read_data(inpt: InptType,
               **kwargs
               ) -> pd.DataFrame:
     """
-    Returns a DataFrame with contents from file, string or bytes.
+    Returns a DataFrame with contents from .file, string or bytes.
 
     This function is useful when the data to be converted to a DataFrame
     is of unknown nature, possibly inhomogeneous or made using

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
+import chardet
 import sys
+
+from argparse import ArgumentParser
 from collections import Counter
 
-import chardet
-from argparse import ArgumentParser
-
-from shortcuts import get_desc, InptType
-from get_bytes import get_bytes
+from .get_bytes import get_bytes
+from .shortcuts import get_desc, InptType
 
 
 def get_most_common_enc(inpt: InptType) -> str:

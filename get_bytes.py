@@ -2,17 +2,17 @@
 
 import os
 import sys
-from pathlib import Path
 
 from argparse import ArgumentParser
+from pathlib import Path
 
-from shortcuts import get_desc
-from shortcuts import InptType
+from .shortcuts import InptType
+from .shortcuts import get_desc
 
 
 def get_bytes(inpt: InptType) -> bytes:
     """
-    Returns a bytes object from 'inpt', no matter what 'inpt' is.
+    Returns a bytes object from .'inpt', no matter what 'inpt' is.
 
     For ``ioBase`` classes, its contents is read.
     If the read input is ``bytes`` or ``bytearray``, it is returned as is.

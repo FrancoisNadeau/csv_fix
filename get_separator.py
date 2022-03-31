@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 
+import pandas as pd
 import re
 
-import pandas as pd
 from argparse import ArgumentParser
 
-from shortcuts import InptType
-from get_bytes import get_bytes
-from get_encoding import get_encoding
-
+from .get_bytes import get_bytes
+from .get_encoding import get_encoding
+from .shortcuts import InptType
 
 POSSIBLES = [' ', '\t', '\x0b', '\x0c', r'\|', r'\\t', ',', ';', ':']
 

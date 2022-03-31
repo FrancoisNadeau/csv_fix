@@ -8,8 +8,11 @@ from .get_has_header import get_has_header
 from .get_line_end import get_line_end
 from .get_separator import get_separator
 from .read_data import read_data
-from .shortcuts import even_seq, get_desc, InptType, odd_seq, SepType
+from .shortcuts import (even_seq, get_desc, InptType, odd_seq, SepType)
 
-__all__ = ['fix_dupindex', 'get_bytes', 'get_encoding',
-           'get_has_dupindex', 'get_has_header', 'get_line_end',
-           'get_separator', 'read_data', 'shortcuts']
+__all__ = [
+    'fix_dupindex', 'get_bytes', 'get_encoding',
+    'get_has_dupindex', 'get_has_header', 'get_line_end',
+    'get_separator', 'read_data', 'shortcuts',
+    'even_seq', 'get_desc', 'InptType', 'odd_seq', 'SepType'
+    ]

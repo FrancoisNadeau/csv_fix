@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 
-from typing import Union
-
 import numpy as np
 import pandas as pd
 from argparse import ArgumentParser
+from typing import Union
 
-from shortcuts import even_seq, get_desc, InptType, odd_seq
-from read_data import read_data
+from .read_data import read_data
+from .shortcuts import even_seq, get_desc, InptType, odd_seq
 
 
 def fix_dupindex(inpt: Union[InptType, pd.DataFrame]
@@ -16,7 +15,7 @@ def fix_dupindex(inpt: Union[InptType, pd.DataFrame]
     Fix data with duplicate values along the x (row) axis.
     
     First, splits data into even and odd rows and creates
-    two separate DataFrames from these.
+    two separate DataFrames from .these.
     Second, checks if any columns is exactly the same in both tables.
     Returns the concatenation along the y-axis of one of the whole
     DataFrames to the columns which were different between

@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 
+import pandas as pd
+
+from argparse import ArgumentParser
 from io import BytesIO
 from typing import Union
-
-import pandas as pd
-from argparse import ArgumentParser
 from unidecode import unidecode
 
-from shortcuts import get_desc, InptType
-from get_bytes import get_bytes
-from get_encoding import get_encoding
+from .get_bytes import get_bytes
+from .get_encoding import get_encoding
+from .shortcuts import get_desc, InptType
 
 
 def get_has_header(inpt: Union[InptType, pd.DataFrame],

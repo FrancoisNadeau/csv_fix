@@ -32,7 +32,7 @@ def get_desc(function_name: str) -> tuple:
             Tuple of strings representing each parameter's help message
     """
 
-    from docstring_parser import parse as ds_parse
+    from .docstring_parser import parse as ds_parse
 
     parsed = ds_parse(function_name.__doc__)
     help_msgs = tuple(prm.description for prm
