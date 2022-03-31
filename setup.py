@@ -6,7 +6,7 @@ readme = Path(__file__).parent.joinpath('README.md').read_text()
 # requirements = Path(__file__).parent.joinpath('requirements.txt').read_text().splitlines()
 
 setup(
-    name='csv_fix',
+    name='csvfix',
     version='0.0.1',
     packages=find_packages(),
     python_requires='>=3.8',
